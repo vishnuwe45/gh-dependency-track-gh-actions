@@ -2,7 +2,9 @@ from requests import post, get
 import os
 
 url = os.environ.get('URL')
+print(url)
 key = os.environ.get('KEY')
+print(key)
 def get_bom_xml(bom_xml: str = 'bom.xml') -> str:
     with open(bom_xml, 'r') as bom:
         return bom.read()
